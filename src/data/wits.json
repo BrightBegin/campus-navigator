@@ -1,0 +1,33 @@
+{
+  "university": "University of the Witwatersrand",
+  "campuses": [
+    {
+      "id": "braamfontein-east",
+      "name": "Braamfontein East Campus",
+      "courses": ["BSc Computer Science", "BSc Mathematics", "BCom Accounting"]
+    },
+    {
+      "id": "braamfontein-west",
+      "name": "Braamfontein West Campus",
+      "courses": ["BA Humanities", "LLB Law"]
+    },
+    {
+      "id": "parktown",
+      "name": "Parktown Campus",
+      "courses": ["MBBCh Medicine", "BSc Physiotherapy"]
+    }
+  ],
+  "residences": [
+    {
+      "id": "res-001",
+      "name": "Example Residence Hall",
+      "type": "on-campus",
+      "nearestCampus": "braamfontein-east",
+      "priceRangeMonthly": { "min": 3500, "max": 5500 },
+      "distanceToCampusKm": 0.3,
+      "safetyScore": 8.5,
+      "keyFacts": ["NSFAS accredited", "Meals included", "24/7 security"],
+      "listingUrl": "https://example.com/residence-listing"
+    }
+  ]
+}
