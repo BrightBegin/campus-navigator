@@ -1,16 +1,41 @@
-# React + Vite
+# Campus Navigator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A website prototype to help first-year university students — especially those coming from unfamiliar backgrounds — navigate campuses, courses, and student housing in one place.
 
-Currently, two official plugins are available:
+## The problem
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Many first-year students arrive at university with little knowledge of their campus, available courses per campus, safe places to stay, or nearby essential facilities. Existing resources are scattered across different sites, word-of-mouth, or not available at all. Campus Navigator aims to bring this information together and help students make informed housing decisions.
 
-## React Compiler
+## Current features (prototype, Wits University only)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Campus & course browser** — view each campus and the courses offered there
+- **Residence listings** — price range, distance to campus, safety score, and key facts per residence
+- **Priority-based filtering** — weight what matters most to you (price, safety, distance) using sliders, and residences re-rank live based on your preferences
 
-## Expanding the ESLint configuration
+## Planned features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Nearby facilities (clinics, police stations, stores) per residence
+- Support for additional universities beyond Wits
+- Verified-resident safety reviews
+- NSFAS-accreditation filtering
+- Orientation and first-week checklist info
+
+## Tech stack
+
+- React (via Vite)
+- Plain JSON as a mock dataset (no backend yet — this is a prototype)
+
+## Running locally
+
+```bash
+git clone https://github.com/BrightBegin/campus-navigator.git
+cd campus-navigator
+npm install
+npm run dev
+```
+
+Then open the local URL shown in your terminal (usually `http://localhost:5173`).
+
+## Status
+
+This is an early-stage prototype built to validate the core concept before further development and potential publishing.
