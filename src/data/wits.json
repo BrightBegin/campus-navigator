@@ -18,7 +18,7 @@
     }
   ],
   "residences": [
-    {
+        {
       "id": "res-001",
       "name": "Example Residence Hall",
       "type": "on-campus",
@@ -27,7 +27,12 @@
       "distanceToCampusKm": 0.3,
       "safetyScore": 8.5,
       "keyFacts": ["NSFAS accredited", "Meals included", "24/7 security"],
-      "listingUrl": "https://example.com/residence-listing"
+      "listingUrl": "https://example.com/residence-listing",
+      "nearbyFacilities": [
+        { "type": "Clinic", "name": "Wits Health Clinic", "distanceKm": 0.2 },
+        { "type": "Police Station", "name": "Hillbrow SAPS", "distanceKm": 1.1 },
+        { "type": "Store", "name": "Campus Convenience Store", "distanceKm": 0.1 }
+      ]
     },
         {
       "id": "res-002",
@@ -38,7 +43,12 @@
       "distanceToCampusKm": 1.2,
       "safetyScore": 7.8,
       "keyFacts": ["Not NSFAS accredited", "Self-catering", "Gated complex"],
-      "listingUrl": "https://example.com/residence-listing-2"
+      "listingUrl": "https://example.com/residence-listing-2",
+      "nearbyFacilities": [
+        { "type": "Clinic", "name": "Wits Health Clinic", "distanceKm": 0.2 },
+        { "type": "Police Station", "name": "Hillbrow SAPS", "distanceKm": 1.1 },
+        { "type": "Store", "name": "Campus Convenience Store", "distanceKm": 0.1 }
+      ]
     },
     {
       "id": "res-003",
@@ -49,7 +59,12 @@
       "distanceToCampusKm": 0.8,
       "safetyScore": 6.5,
       "keyFacts": ["NSFAS accredited", "Shared kitchen", "24/7 security"],
-      "listingUrl": "https://example.com/residence-listing-3"
+      "listingUrl": "https://example.com/residence-listing-3",
+      "nearbyFacilities": [
+        { "type": "Clinic", "name": "Wits Health Clinic", "distanceKm": 0.2 },
+        { "type": "Police Station", "name": "Hillbrow SAPS", "distanceKm": 1.1 },
+        { "type": "Store", "name": "Campus Convenience Store", "distanceKm": 0.1 }
+      ]
     }
 
   ]

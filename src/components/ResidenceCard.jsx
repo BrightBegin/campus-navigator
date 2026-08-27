@@ -12,6 +12,20 @@ function ResidenceCard({ residence }) {
           <li key={index}>{fact}</li>
         ))}
       </ul>
+
+      {residence.nearbyFacilities && (
+        <>
+          <p style={{ marginBottom: "4px", fontWeight: "bold" }}>Nearby:</p>
+          <ul>
+            {residence.nearbyFacilities.map((facility, index) => (
+              <li key={index}>
+                {facility.type} — {facility.name} ({facility.distanceKm} km)
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+
       <a href={residence.listingUrl} target="_blank" rel="noopener noreferrer">
         View listing
       </a>
