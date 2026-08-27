@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ResidenceCard from "./components/ResidenceCard";
 import FilterPanel from "./components/FilterPanel";
+import CampusList from "./components/CampusList";
 import witsData from "./data/wits.json";
 import { scoreResidences } from "./utils/scoreResidences";
 
@@ -17,6 +18,9 @@ function App() {
     <div>
       <h1>{witsData.university}</h1>
 
+      <CampusList campuses={witsData.campuses} />
+
+      <h2>Residences</h2>
       <FilterPanel weights={weights} onChange={setWeights} />
 
       <div style={{ display: "flex", flexWrap: "wrap" }}>
