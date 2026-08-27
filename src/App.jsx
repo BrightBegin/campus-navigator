@@ -4,6 +4,7 @@ import FilterPanel from "./components/FilterPanel";
 import CampusList from "./components/CampusList";
 import witsData from "./data/wits.json";
 import { scoreResidences } from "./utils/scoreResidences";
+import "./App.css";
 
 function App() {
   const [weights, setWeights] = useState({
@@ -15,15 +16,18 @@ function App() {
   const sortedResidences = scoreResidences(witsData.residences, weights);
 
   return (
-    <div>
-      <h1>{witsData.university}</h1>
+    <div className="app-container">
+      <div className="app-header">
+        <h1>{witsData.university}</h1>
+        <p>Find your campus, your course, and a place to stay that fits you</p>
+      </div>
 
       <CampusList campuses={witsData.campuses} />
 
-      <h2>Residences</h2>
+      <h2 className="section-title">Residences</h2>
       <FilterPanel weights={weights} onChange={setWeights} />
 
-      <div style={{ display: "flex", flexWrap: "wrap" }}>
+      <div className="card-grid">
         {sortedResidences.map((residence) => (
           <ResidenceCard key={residence.id} residence={residence} />
         ))}

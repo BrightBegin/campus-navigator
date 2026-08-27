@@ -1,10 +1,10 @@
 function CampusList({ campuses }) {
   return (
-    <div style={{ marginBottom: "32px" }}>
-      <h2>Campuses</h2>
-      <div style={{ display: "flex", flexWrap: "wrap" }}>
+    <div>
+      <h2 className="section-title">Campuses</h2>
+      <div className="card-grid">
         {campuses.map((campus) => (
-          <div key={campus.id} style={styles.card}>
+          <div key={campus.id} className="card">
             <h3>{campus.name}</h3>
             <p>Courses offered:</p>
             <ul>
@@ -18,15 +18,5 @@ function CampusList({ campuses }) {
     </div>
   );
 }
-
-const styles = {
-  card: {
-    border: "1px solid #ccc",
-    borderRadius: "8px",
-    padding: "16px",
-    maxWidth: "280px",
-    margin: "16px",
-  },
-};
 
 export default CampusList;

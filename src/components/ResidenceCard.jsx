@@ -1,6 +1,6 @@
 function ResidenceCard({ residence }) {
   return (
-    <div style={styles.card}>
+    <div className="card">
       <h3>{residence.name}</h3>
       <p>
         R{residence.priceRangeMonthly.min} - R{residence.priceRangeMonthly.max} / month
@@ -32,15 +32,5 @@ function ResidenceCard({ residence }) {
     </div>
   );
 }
-
-const styles = {
-  card: {
-    border: "1px solid #ccc",
-    borderRadius: "8px",
-    padding: "16px",
-    maxWidth: "300px",
-    margin: "16px",
-  },
-};
 
 export default ResidenceCard;

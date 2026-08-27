@@ -4,7 +4,7 @@ function FilterPanel({ weights, onChange }) {
   };
 
   return (
-    <div style={{ marginBottom: "24px" }}>
+    <div className="filter-panel">
       <h3>Set your priorities</h3>
 
       <label>
@@ -18,7 +18,6 @@ function FilterPanel({ weights, onChange }) {
           onChange={(e) => handleSliderChange("price", e.target.value)}
         />
       </label>
-      <br />
 
       <label>
         Safety importance: {weights.safety.toFixed(1)}
@@ -31,7 +30,6 @@ function FilterPanel({ weights, onChange }) {
           onChange={(e) => handleSliderChange("safety", e.target.value)}
         />
       </label>
-      <br />
 
       <label>
         Distance importance: {weights.distance.toFixed(1)}
