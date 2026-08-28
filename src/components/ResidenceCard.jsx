@@ -1,6 +1,7 @@
 function ResidenceCard({ residence }) {
   return (
-    <div className="card">
+    
+    <div className="card" id={residence.id}>
       <h3>{residence.name}</h3>
       <p>
         R{residence.priceRangeMonthly.min} - R{residence.priceRangeMonthly.max} / month

@@ -1,5 +1,6 @@
 {
   "university": "University of the Witwatersrand",
+    "address": "1 Jan Smuts Ave, Braamfontein, Johannesburg, 2000",
   "campuses": [
     {
       "id": "braamfontein-east",
