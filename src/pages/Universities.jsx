@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import witsData from "../data/wits.json";
 import UniversitySearchBar from "../components/UniversitySearchBar";
+import witsLogo from "../assets/wits_logo.jpeg";
 
 const universities = [
   {
@@ -8,6 +9,7 @@ const universities = [
     name: witsData.university,
     campusCount: witsData.campuses.length,
     data: witsData,
+    image: witsLogo,
   },
 ];
 
@@ -22,7 +24,8 @@ function Universities() {
       <div className="card-grid">
         {universities.map((uni) => (
           <Link to={`/university/${uni.id}`} key={uni.id} className="uni-card-link">
-            <div className="card">
+            <div className="card uni-card">
+              <img src={uni.image} alt={uni.name} className="uni-card-image" />
               <h3>{uni.name}</h3>
               <p>{uni.campusCount} campuses</p>
             </div>

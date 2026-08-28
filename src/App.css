@@ -253,3 +253,86 @@ body {
 .no-results {
   color: #9aa0ac;
 }
+/* University card image */
+.uni-card-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.uni-card:hover {
+  border-color: #6ea8fe;
+}
+
+/* Hover states for sliders */
+.filter-panel input[type="range"]:hover {
+  accent-color: #4d8dfd;
+}
+
+.filter-panel input[type="range"]:focus {
+  outline: 2px solid #6ea8fe;
+  outline-offset: 2px;
+}
+
+/* Nav link hover already exists — reinforcing button hover feel */
+.navbar a {
+  transition: color 0.15s ease;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .app-header h1,
+  .wits-hero-overlay h1 {
+    font-size: 1.6rem;
+  }
+
+  .home-hero h1 {
+    font-size: 2rem;
+  }
+
+  .home-hero p {
+    font-size: 1rem;
+  }
+
+  .card-grid {
+    justify-content: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 340px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .navbar div {
+    display: flex;
+    gap: 16px;
+  }
+
+  .wits-hero {
+    height: 40vh;
+  }
+
+  .search-input {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container,
+  .page-container {
+    padding: 16px;
+  }
+
+  .cta-button {
+    padding: 12px 22px;
+    font-size: 0.95rem;
+  }
+}
